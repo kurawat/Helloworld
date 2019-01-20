@@ -27,6 +27,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     </flow>
     <flow name="get:/flights/{ID}:american-flights-api-config">
         <set-payload value="{&#xA;&quot;ID&quot; : 1,&#xA;&quot;code&quot; : &quot;ER38sd&quot;,&#xA;&quot;price&quot; : 400,&#xA;&quot;departureDate&quot; : &quot;2017/07/26&quot;,&#xA;&quot;origin&quot; : &quot;CLE&quot;,&#xA;&quot;destination&quot; : &quot;SFO&quot;,&#xA;&quot;emptySeats&quot; : 0,&#xA;&quot;plane&quot; : {&#xA;&quot;type&quot; : &quot;Boeing 737&quot;,&#xA;&quot;totalSeats&quot; : 150&#xA;}&#xA;}" doc:name="Set Payload"/>
+        <logger message="logger by Kuldeep" level="INFO" doc:name="Logger"/>
     </flow>
     <flow name="post:/flights:application/json:american-flights-api-config">
         <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
